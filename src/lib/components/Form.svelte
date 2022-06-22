@@ -334,10 +334,6 @@
   </div>
 </form>
 
-<pre>
-{JSON.stringify($prefixObjArr, null, 2)}
-</pre>
-
 <style>
   .form {
     padding: 0 16px;
