@@ -84,11 +84,11 @@
             return `.${`n`}${pfx}${separator}${size} {\n${props
               .map((prop) => {
                 if (unit == "rem") {
-                  return `\t${prop}: n${Number(
+                  return `\t${prop}: -${Number(
                     (size / root).toFixed(3)
                   )}${unit};`;
                 } else {
-                  return `\t${prop}: n${size}${unit};`;
+                  return `\t${prop}: -${size}${unit};`;
                 }
               })
               .join("\r\n")}\n}`;
