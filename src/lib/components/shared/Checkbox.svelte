@@ -8,7 +8,7 @@
 </script>
 
 <label class="input__control">
-  <input {btnLabel} type="checkbox" {name}  bind:checked={isChecked} on:click/>
+  <input {btnLabel} type="checkbox" {name} bind:checked={isChecked} on:click />
   <span class="outside">
     <span class="inside" />
   </span>
@@ -16,8 +16,7 @@
 </label>
 
 <style>
-
-input[type="checkbox"] {
+  input[type="checkbox"] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
     appearance: none;
@@ -26,7 +25,7 @@ input[type="checkbox"] {
     /* Not removed via appearance */
     margin: 0;
   }
-   .input__control {
+  .input__control {
     position: relative;
     font-family: "Montserrat", "sans-serif";
     font-size: 1rem;
@@ -45,7 +44,7 @@ input[type="checkbox"] {
 
     width: 20px;
     height: 20px;
-    border: 2px solid #678efe;
+    border: 2px solid var(--col-active);
     border-radius: 2px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -62,12 +61,12 @@ input[type="checkbox"] {
     border-radius: 2px;
     width: 10px;
     height: 10px;
-    background: #678efe;
+    background: var(--col-active);
     left: 3px;
     top: 3px;
     -webkit-transform: scale(0, 0);
     transform: scale(0, 0);
-  } 
+  }
 
   /* .no-transforms .inside {
     left: auto;
@@ -83,7 +82,7 @@ input[type="checkbox"] {
         }
       }*/
   /* } */
-   input:checked + .outside .inside {
+  input:checked + .outside .inside {
     -webkit-animation: radio-select 0.1s linear;
     animation: radio-select 0.1s linear;
     -webkit-transform: scale(1, 1);
@@ -92,7 +91,7 @@ input[type="checkbox"] {
   .no-transforms input:checked + .outside .inside {
     width: 10px;
     height: 10px;
-  } 
+  }
   /* @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     input[type="checkbox"]{
       --active: #678efe;
@@ -141,10 +140,10 @@ input[type="checkbox"] {
       --b: var(--disabled-inner);
       --bc: var(--border);
     } */
-    /* input[type="checkbox"]:disabled + label {
+  /* input[type="checkbox"]:disabled + label {
       cursor: not-allowed;
     } */
-    /* input[type="checkbox"]:hover:not(:checked):not(:disabled){
+  /* input[type="checkbox"]:hover:not(:checked):not(:disabled){
       --bc: var(--border-hover);
     }
     input[type="checkbox"]:focus {
@@ -159,7 +158,7 @@ input[type="checkbox"] {
     input[type="checkbox"]:not(.switch):checked {
       --o: 1;
     } */
-    /* input[type="checkbox"] + label {
+  /* input[type="checkbox"] + label {
       font-size: 14px;
       line-height: 21px;
       display: inline-block;
@@ -168,7 +167,7 @@ input[type="checkbox"] {
       margin-left: 4px;
     } */
 
-    /* input[type="checkbox"]:not(.switch) {
+  /* input[type="checkbox"]:not(.switch) {
       border-radius: 7px;
     }
     input[type="checkbox"]:not(.switch):after {
@@ -184,11 +183,11 @@ input[type="checkbox"] {
     input[type="checkbox"]:not(.switch):checked {
       --r: 43deg;
     } */
-    /* input[type="checkbox"].switch {
+  /* input[type="checkbox"].switch {
       width: 38px;
       border-radius: 11px;
     } */
-    /* input[type="checkbox"].switch:after {
+  /* input[type="checkbox"].switch:after {
       left: 2px;
       top: 2px;
       border-radius: 50%;
@@ -197,11 +196,11 @@ input[type="checkbox"] {
       background: var(--ab, var(--border));
       transform: translateX(var(--x, 0));
     } */
-    /* input[type="checkbox"].switch:checked {
+  /* input[type="checkbox"].switch:checked {
       --ab: var(--active-inner);
       --x: 17px;
     } */
-    /* input[type="checkbox"].switch:disabled:not(:checked):after {
+  /* input[type="checkbox"].switch:disabled:not(:checked):after {
       opacity: 0.6;
     } */
 
@@ -262,9 +261,9 @@ ul li {
     font-family: "Montserrat", "sans-serif";
     font-size: 1rem;
     line-height: 1.1; */
-    /* display: grid;
+  /* display: grid;
     grid-template-columns: 1em auto; */
-    /* gap: 0.4em; */
+  /* gap: 0.4em; */
   /* } */
   /* 
   .outside {

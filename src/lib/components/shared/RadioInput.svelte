@@ -44,7 +44,7 @@ input[type="radio"] {
     margin-top: -10px;
     width: 20px;
     height: 20px;
-    border: 2px solid #cdd9ed;
+    border: 2px solid var(--col-bg-gray) ;
     border-radius: 50%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -61,7 +61,7 @@ input[type="radio"] {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background: #678efe;
+    background: var(--col-active);
     left: 3px;
     top: 3px;
     -webkit-transform: scale(0, 0);
@@ -83,7 +83,7 @@ input[type="radio"] {
       }*/
   /* } */
   input:checked + .outside {
-    border-color: #678efe;
+    border-color: var(--col-active);
   }
    input:checked + .outside .inside {
     -webkit-animation: radio-select 0.1s linear;
