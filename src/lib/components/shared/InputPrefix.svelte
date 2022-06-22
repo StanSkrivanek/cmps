@@ -1,4 +1,5 @@
 <script>
+  // import '/static/global.css'
   import { prefixObjArr } from "$lib/stores/store.js";
   import { selectedInputId } from "$lib/stores/store.js";
   import { pfxPredefined, addCssProps } from "$lib/helpers";
@@ -18,7 +19,7 @@
   let x = null;
 
   $: allPfxArr = [];
- 
+
   function getInputId() {
     $selectedInputId = id;
   }
@@ -122,21 +123,6 @@
 </div>
 
 <style>
-  :root {
-    --input-color: #99a3ba;
-    --input-border: #cdd9ed;
-    --input-background: #fff;
-    --input-placeholder: #cbd1dc;
-    --input-border-focus: #275efe;
-    --group-color: var(--input-color);
-    --group-border: var(--input-border);
-    --group-background: #eef4ff;
-    --group-color-focus: #fff;
-    --group-border-focus: var(--input-border-focus);
-    --group-color-error: #ff5a5f;
-    --group-background-focus: #678efe;
-  }
-
   .input-component {
     position: relative;
     margin-bottom: 36px;
@@ -156,24 +142,24 @@
     font-family: inherit;
     border-radius: 6px;
     -webkit-appearance: none;
-    color: var(--input-color);
-    border: 1px solid var(--input-border);
-    background: var(--input-background);
+    color: var(--col-text-sec);
+    border: 1px solid var(--col-bg-gray);
+    background: var(--col-white);
     transition: border 0.3s ease;
   }
   .form-field::-moz-placeholder {
-    color: var(--input-placeholder);
+    color: var(--col-text-placeholder);
   }
   .form-field:-ms-input-placeholder {
-    color: var(--input-placeholder);
+    color: var(--col-text-placeholder);
   }
   .form-field::placeholder {
-    color: var(--input-placeholder);
+    color: var(--col-text-placeholder);
   }
-  /* .form-field:focus {
-  outline: none;
-  border-color: var(--input-border-focus);
-} */
+  .form-field:focus {
+    outline: none;
+    border-color: var(--col-active);
+  }
 
   .form-group {
     position: relative;
@@ -215,16 +201,16 @@
     padding: 8px 12px;
     font-size: 14px;
     line-height: 25px;
-    color: var(--group-color);
-    background: var(--group-background);
-    border: 1px solid var(--group-border);
+    color: var(--col-text-sec);
+    background: var(--col-bg-sec);
+    border: 1px solid var(--col-bg-gray);
     transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
   }
-  /* .form-group:focus-within > span {
-  color: var(--group-color-focus);
-  background: var(--group-background-focus);
-  border-color: var(--group-border-focus);
-} */
+  .form-group:focus-within > span {
+    /* color: var(--col-white); */
+    /* background: var(--col-bg-gray); */
+    border-color: var(--col-active);
+  }
 
   .btn-select {
     text-transform: uppercase;
@@ -232,9 +218,8 @@
   }
 
   .form-group .selected {
-    /* background: var(--input-border-focus); */
-    color: var(--group-color-focus);
-    background: var(--group-background-focus);
+    color: var(--col-white);
+    background: var(--col-active);
   }
   .input-heading {
     font-family: "Montserrat", "sans-serif";
@@ -243,26 +228,19 @@
     font-weight: 300;
     letter-spacing: 0.05rem;
     line-height: 0;
-    /* padding-left: 36px; */
   }
-  .disabled {
+  /* .disabled {
     color: #ccc;
     pointer-events: none;
-  }
+  } */
   .danger {
     position: absolute;
     bottom: -24px;
     left: 36px;
-    color: #ff5a5f;
+    color: var(--col-danger);
     font-size: 0.8rem;
   }
-  /* .danger {
-    position: absolute;
-    top: -10px;
-    right: 0;
-    color: #ff5a5f;
-    font-size: 0.8rem;
-  } */
+
   .bg-alert {
     background: var(--group-color-error) !important;
   }

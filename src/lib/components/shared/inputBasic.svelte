@@ -18,9 +18,10 @@
 </div>
 
 <style>
-  * {
+  /* * {
     box-sizing: border-box;
   }
+  */
   :root {
     --input-color: #99a3ba;
     --input-border: #cdd9ed;
@@ -34,7 +35,7 @@
     --group-border-focus: var(--input-border-focus);
     --group-color-error: #ff5a5f;
     --group-background-focus: #678efe;
-  }
+  } 
 
   .input-component {
     position: relative;
@@ -68,10 +69,6 @@
   .form-field::placeholder {
     color: var(--input-placeholder);
   }
-  /* .form-field:focus {
-  outline: none;
-  border-color: var(--input-border-focus);
-} */
 
   .form-group {
     position: relative;
@@ -88,18 +85,22 @@
   .form-group .form-field:not(:first-child):not(:last-child) {
     border-radius: 0;
   }
+
   .form-group > span:first-child,
   .form-group .form-field:first-child {
     border-radius: 6px 0 0 6px;
   }
+
   .form-group > span:last-child,
   .form-group .form-field:last-child {
     border-radius: 0 6px 6px 0;
   }
+
   .form-group > span:not(:first-child),
   .form-group .form-field:not(:first-child) {
     margin-left: -1px;
   }
+
   .form-group .form-field {
     position: relative;
     z-index: 1;
@@ -108,6 +109,7 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .form-group > span {
     text-align: center;
     padding: 8px 12px;
@@ -118,22 +120,11 @@
     border: 1px solid var(--group-border);
     transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
   }
-  /* .form-group:focus-within > span {
-  color: var(--group-color-focus);
-  background: var(--group-background-focus);
-  border-color: var(--group-border-focus);
-} */
 
   .btn-select {
     text-transform: uppercase;
-    /* cursor: pointer; */
   }
 
-  /* .form-group .selected {
-    background: var(--input-border-focus);
-    color: var(--group-color-focus);
-    background: var(--group-background-focus);
-  } */
   .input-heading {
     font-family: "Montserrat", "sans-serif";
     text-transform: uppercase;
@@ -141,29 +132,6 @@
     font-weight: 300;
     letter-spacing: 0.05rem;
     line-height: 0;
-    /* padding-left: 36px; */
   }
-  /* .disabled {
-    color: #ccc;
-    pointer-events: none;
-  } */
-  /* .danger {
-    position: absolute;
-    bottom: -24px;
-    left: 36px;
-    color: #ff5a5f;
-    font-size: 0.8rem;
-  } */
-  /* .bg-alert {
-    background: var(--group-color-error) !important;
-  } */
-  /* Webkit browsers like Safari and Chrome */
-  /* input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  input[type="number"] {
-    -moz-appearance: textfield;
-  } */
+
 </style>

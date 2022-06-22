@@ -321,7 +321,6 @@
         on:click={toggleVisibility}
       />
     </div>
-    <!-- TODO: add alert if Sizes is empty -->
     <Button
       type="submit"
       btColor="primary"
@@ -336,9 +335,7 @@
 </pre> -->
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
+
   .form {
     padding: 0 16px;
     margin-bottom: 24px;

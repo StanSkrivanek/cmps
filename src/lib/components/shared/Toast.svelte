@@ -81,12 +81,7 @@
   .info .toast-msg {
     color: #fff;
   }
-  /* 
-warning (#ffc107) 
-success (#66ff99) 
-alert (#ff5a5f) 
-info (#678efe) 
-*/
+
 
 
 </style>

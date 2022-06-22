@@ -1,13 +1,17 @@
- /* :root {
-    --input-color: #99a3ba;
-    --input-border: #cdd9ed;
-    --input-background: #fff;
-    --input-placeholder: #cbd1dc;
-    --input-border-focus: #275efe;
-    --group-color: var(--input-color);
-    --group-border: var(--input-border);
-    --group-background: #eef4ff;
-    --group-color-focus: #fff;
-    --group-border-focus: var(--input-border-focus);
-    --group-background-focus: #678efe;
-  } */
+:root {
+  --col-text-main: #2c3e50;
+  --col-text-sec: #99a3ba;
+  --col-text-placeholder: #cbd1dc;
+  --col-bg-gray: #cdd9ed;;
+  --col-bg-sec: #eef4ff;
+  --col-info: #00bcd4;
+  --col-success: #66ff99;
+  --col-warning: #ffc107;
+  --col-danger: #ff5a5f;
+  --col-active: #678efe;
+  --col-white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
