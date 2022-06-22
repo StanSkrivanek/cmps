@@ -51,11 +51,11 @@ Input fields for to fill custom prefixes.
 
 When you are done trigering button will generate all data into clipborad.
 
-**NOTE:** Generated code will include **negative** margins for `top`, `left`, `bottom` and `right`. these will have `-` before prefix as in Tailwind.
+**NOTE:** Generated code will include **negative** margins for `top`, `left`, `bottom` and `right`. these will have letter `n` before prefix.
 
 ```css
-.-py-24 {
-  padding-top: 1.5rem
-  padding-bottom:1.5rem;
+.nmv-24 {
+  margin-top: 1.5rem
+  margin-bottom:1.5rem;
  }
 ```
