@@ -4,8 +4,6 @@
   import { pointSys } from "$lib/stores/store";
   import RadioInput from "$lib/components/shared/RadioInput.svelte";
   import InputBasic from "$lib/components/shared/InputBasic.svelte";
-  // import Form from "./Form.svelte";
-  // import Button from "$lib/components/shared/Button.svelte";
 
   let pointSystem = "0";
   let units = "0";
@@ -102,7 +100,6 @@
           />
           <div class="input-heading danger">
             <p>{!isNumber || isEmpty || 0 ? "use Numbers only" : ""}</p>
-            <!-- <p>{isEmpty ? "Are you sure?" : ""}</p> -->
           </div>
         {/if}
       </div>
@@ -110,39 +107,28 @@
   </div>
 
   <Previewer />
-  <!-- <Visual /> -->
 </div>
 
 <style>
-  * {
-    box-sizing: border-box;
-  }
+
   .container {
     display: flex;
-    /* flex: 0 1 50%; */
     flex-wrap: wrap;
     justify-content: space-between;
-    /* min-height: 140px; */
     gap: 16px;
     align-items: top;
-    /* border: 1px solid green; */
-    /* margin-bottom: 24px; */
   }
   .options {
     display: flex;
     flex: 1 1 40%;
-    /* flex-wrap: wrap; */
     gap: 16px;
-    /* margin-bottom: 24px; */
   }
   .btn-group__c {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1 1 40%;
-    /* border: 1px solid red; */
     gap: 16px;
-    /* padding-top: 24px; */
   }
   .btns__w {
     display: flex;
@@ -154,32 +140,6 @@
   .input__w {
     position: relative;
     max-width: 100%;
-    /* display: flex;
-    gap: 16px; */
   }
-  /* .input-heading {
-    font-family: "Montserrat", "sans-serif";
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
-    line-height: 0;
-    padding-left: 36px;
-  } */
-  .danger {
-    position: absolute;
-    font-family: "Montserrat", "sans-serif";
-    text-transform: uppercase;
-    top: -8px;
-    right: 0;
-    color: #ff5a5f;
-    font-size: 0.8rem;
-    text-align: right;
-  }
-  /* .hidden {
-    visibility: hidden;
-  } */
-  /* .visible {
-    visibility: visible;
-  } */
+
 </style>

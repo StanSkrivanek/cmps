@@ -22,7 +22,7 @@
     box-sizing: border-box;
   }
   */
-  :root {
+  /* :root {
     --input-color: #99a3ba;
     --input-border: #cdd9ed;
     --input-background: #fff;
@@ -35,7 +35,7 @@
     --group-border-focus: var(--input-border-focus);
     --group-color-error: #ff5a5f;
     --group-background-focus: #678efe;
-  } 
+  }  */
 
   .input-component {
     position: relative;
@@ -55,19 +55,23 @@
     font-family: inherit;
     border-radius: 6px;
     -webkit-appearance: none;
-    color: var(--input-color);
-    border: 1px solid var(--input-border);
-    background: var(--input-background);
+    color: var(--col-text-sec);
+    border: 1px solid var(--col-bg-gray);
+    background: var(--col-white);
     transition: border 0.3s ease;
   }
   .form-field::-moz-placeholder {
-    color: var(--input-placeholder);
+    color: var(--col-text-placeholder);
   }
   .form-field:-ms-input-placeholder {
-    color: var(--input-placeholder);
+    color: var(--col-text-placeholder);
   }
   .form-field::placeholder {
-    color: var(--input-placeholder);
+    color: var(--col-text-placeholder);
+  }
+  .form-field:focus {
+    outline: none;
+    border-color: var(--col-active);
   }
 
   .form-group {
@@ -110,15 +114,20 @@
     margin-bottom: 0;
   }
 
-  .form-group > span {
+   .form-group > span {
     text-align: center;
     padding: 8px 12px;
     font-size: 14px;
     line-height: 25px;
-    color: var(--group-color);
-    background: var(--group-background);
-    border: 1px solid var(--group-border);
+    color: var(--col-text-sec);
+    background: var(--col-bg-sec);
+    border: 1px solid var(--col-bg-gray);
     transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+  }
+  .form-group:focus-within > span {
+    /* color: var(--col-white); */
+    /* background: var(--col-bg-gray); */
+    border-color: var(--col-active);
   }
 
   .btn-select {
