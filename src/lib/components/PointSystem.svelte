@@ -1,9 +1,8 @@
 <script>
-  import { previewerValues } from "$lib/stores/store.js";
-  import Previewer from "$lib/components/Previewer.svelte";
-  import { pointSys } from "$lib/stores/store";
-  import RadioInput from "$lib/components/shared/RadioInput.svelte";
-  import InputBasic from "$lib/components/shared/InputBasic.svelte";
+  import { previewerValues, pointSys} from "../stores/store.js";
+  import Previewer from "./Previewer.svelte";
+  import RadioInput from "./shared/RadioInput.svelte";
+  import InputBasic from "./shared/inputBasic.svelte";
 
   let pointSystem = "0";
   let units = "0";
