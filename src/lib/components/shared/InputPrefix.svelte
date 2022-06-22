@@ -19,13 +19,15 @@
   let x = null;
 
   $: allPfxArr = [];
-$: console.log(allPfxArr);
+// $: console.log(allPfxArr);
 
   function getInputId() {
     $selectedInputId = id;
   }
 
-  function createAndUpdateObj() {
+  function createAndUpdateObj(e) {
+
+    pfxValue = e.target.value;
     // if not -1 it will push first input into allPfxArr TWICE. OPTION: change id to start from 0
     idx = id - 1;
     cssProps = addCssProps(idx);
@@ -71,9 +73,8 @@ $: console.log(allPfxArr);
   }
 
   $: if (populate === true) {
-    // pfxPrepopulate();
     idx = id - 1;
-    pfxValue = pfxPredefined[idx];
+    pfxValue = pfxValue !== "" ? pfxValue : pfxPredefined[idx];
     showAlert = false;
     cssProps = addCssProps(idx);
     prefixObjArr[idx] = { id, sType, label, cssProps, pfxValue, negative };
@@ -106,13 +107,13 @@ $: console.log(allPfxArr);
         {label}
         {populate}
         {clearData}
+        {negative}
         type="text"
         name="paddingPfx"
         class="form-field"
         space-type={sType}
-        {negative}
         bind:value={pfxValue}
-        on:input={createAndUpdateObj}
+        on:input={(e)=>createAndUpdateObj(e)}
         on:focus={() => getInputId()}
         on:blur={() => ($selectedInputId = "0")}
       />
