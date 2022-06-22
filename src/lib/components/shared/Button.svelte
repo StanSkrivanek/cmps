@@ -11,11 +11,10 @@
   button {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    /* border: 1px solid #cf0056; */
     border: none;
-    background: #d9e4f6;
+    background: var(--col-bg-gray);
     padding: 0.5rem 1rem;
-    color: rgb(92, 91, 91);
+    color: var(--col-text-main);
     border-radius: 4px;
     letter-spacing: 0.05rem;
     /* box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.15); */
@@ -25,22 +24,22 @@
   button:disabled,
   button:disabled:hover,
   button:disabled:active {
-    background: #ccc;
-    border-color: #ccc;
-    color: #959595;
+    background: var(--col-disabled);
+    /* border: 1px solid var(--col-bg-gray); */
+    color: var(--col-text-sec);
     box-shadow: none;
     cursor: not-allowed;
   }
   .primary {
-    background: #678efe;
-    color:white
+    background:var(--col-active);
+    color: var(--col-white)
   }
   .error {
-    background: #ff5a5f;
+    background: var(--col-danger);
     color:white
   }
   .action {
-    background: #66ff99;
-    color:black
+    background: var(--col-active);
+    color:var(--col-white)
   }
 </style>
