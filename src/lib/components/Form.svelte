@@ -12,10 +12,17 @@
   let populate = false;
   let clearData = false;
   let elms = []; // array of elements for clipboard
+  $: isReady = false;
+
+  $: if (sizes.length > 0 && Object.keys(data).length > 3) {
+    isReady = true;
+  }
 
   $: data = $prefixObjArr;
   $: sizes = $sizesStore;
   $: pfxCss = getObjKeysValue(data);
+  $: console.log(isReady);
+  $: console.log(data);
 
   function toggleVisibility() {
     $isVisualHidden = !$isVisualHidden;
@@ -295,7 +302,7 @@
     <div class="btns__c">
       <Button
         type="submit"
-        btColor="action"
+        btColor="primary"
         caption="prepopulate"
         on:click={() => {
           populate = true;
@@ -323,7 +330,7 @@
     </div>
     <Button
       type="submit"
-      btColor="primary"
+      btColor={isReady ? "success" : "disabled"}
       caption="generate to clipboard"
       on:click={() => copyToClipboard(elms.join("\n"))}
     />
@@ -335,7 +342,6 @@
 </pre>
 
 <style>
-
   .form {
     padding: 0 16px;
     margin-bottom: 24px;

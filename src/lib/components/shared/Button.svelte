@@ -38,8 +38,14 @@
     background: var(--col-danger);
     color:white
   }
-  .action {
-    background: var(--col-active);
-    color:var(--col-white)
+  .success {
+    background: var(--col-success);
+    color:var(--col-text-main)
   }
+  .disabled {
+    background: var(--col-disabled);
+    color: var(--col-text-sec);
+    
+  }
+  
 </style>
