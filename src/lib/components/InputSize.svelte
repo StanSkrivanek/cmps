@@ -83,7 +83,7 @@
 </div>
 
 <style>
-  :root {
+  /* :root {
     --input-color: #99a3ba;
     --input-border: #cdd9ed;
     --input-background: #fff;
@@ -96,7 +96,7 @@
     --group-border-focus: var(--input-border-focus);
     --group-background-focus: #678efe;
     --group-color-error: #ff5a5f;
-  }
+  } */
 
   .container {
     /* padding: 0 16px; */

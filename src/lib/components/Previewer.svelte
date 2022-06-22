@@ -42,14 +42,13 @@
 
   .preview-component {
     position: relative;
-
     height: 100%;
     padding: 16px;
     border-radius: 6px;
     background-color: #fff;
     font-family: Menlo, sans-serif;
     font-size: 1.2rem;
-    background-color: #cdd9ed;
+    background-color: var(--col-bg-gray);
   }
   .preview-title {
     font-size: 1rem;
@@ -57,17 +56,17 @@
     margin-bottom: 8px;
     position: absolute;
     padding: 6px 12px;
-    color: rgb(255, 255, 255);
+    color: var(--col-white);
     top: 0;
     left: 4px;
-    background-color: #cdd9ed;
+    background-color:var(--col-bg-gray);
   }
   .preview__c {
     padding: 24px;
     height: 100%;
     overflow: hidden;
-    color: rgb(25, 25, 29);
-    border: 1px solid rgba(255, 255, 255, 0.381);
+    /* color: var(--col-text-main); */
+    border: 1px solid var(--col-bg-sec);
     border-radius: 4px;
   }
 </style>
