@@ -1,6 +1,9 @@
 {
 	"name": "cmps",
-	"version": "0.0.1",
+	"author": "Stan Skrivanek",
+  "email": "finedivstudio@gmail.com",
+  "license": "MIT",
+  "version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
