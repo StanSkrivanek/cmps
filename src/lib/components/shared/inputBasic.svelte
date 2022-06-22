@@ -18,25 +18,6 @@
 </div>
 
 <style>
-  /* * {
-    box-sizing: border-box;
-  }
-  */
-  /* :root {
-    --input-color: #99a3ba;
-    --input-border: #cdd9ed;
-    --input-background: #fff;
-    --input-placeholder: #cbd1dc;
-    --input-border-focus: #275efe;
-    --group-color: var(--input-color);
-    --group-border: var(--input-border);
-    --group-background: #eef4ff;
-    --group-color-focus: #fff;
-    --group-border-focus: var(--input-border-focus);
-    --group-color-error: #ff5a5f;
-    --group-background-focus: #678efe;
-  }  */
-
   .input-component {
     position: relative;
   }

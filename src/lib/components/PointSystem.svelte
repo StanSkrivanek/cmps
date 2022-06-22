@@ -20,13 +20,11 @@
 
   function updateSeparator(e) {
     let value = e.target.value;
-    console.log(value);
     $previewerValues.separator = value;
   }
 
   function updateRootSize(e) {
     let value = Number(e.target.value);
-    console.log("value", value);
 
     var re = new RegExp("^[0-9]");
     if (re.test(value)) {
@@ -105,12 +103,10 @@
       </div>
     </div>
   </div>
-
   <Previewer />
 </div>
 
 <style>
-
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -142,4 +138,14 @@
     max-width: 100%;
   }
 
+  .danger {
+    position: absolute;
+    font-family: "Montserrat", "sans-serif";
+    text-transform: uppercase;
+    top: -8px;
+    right: 0;
+    color: #ff5a5f;
+    font-size: 0.8rem;
+    text-align: right;
+  }
 </style>
