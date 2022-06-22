@@ -55,6 +55,6 @@ When you are done trigering button will generate all data into clipborad.
 
 ```css
 .nmt-24 {
-  margin-top: 1.5rem;
+  margin-top: -1.5rem;
  }
 ```
