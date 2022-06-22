@@ -170,7 +170,6 @@
   .form-group .form-field {
     white-space: nowrap;
     display: block;
-    /* text-transform: uppercase; */
   }
   .form-group > span:not(:first-child):not(:last-child),
   .form-group .form-field:not(:first-child):not(:last-child) {
@@ -214,7 +213,6 @@
 
   .btn-select {
     text-transform: uppercase;
-    /* cursor: pointer; */
   }
 
   .form-group .selected {
@@ -229,10 +227,7 @@
     letter-spacing: 0.05rem;
     line-height: 0;
   }
-  /* .disabled {
-    color: #ccc;
-    pointer-events: none;
-  } */
+
   .danger {
     position: absolute;
     bottom: -24px;
@@ -242,6 +237,6 @@
   }
 
   .bg-alert {
-    background: var(--group-color-error) !important;
+    background: var(--col-danger) !important;
   }
 </style>
