@@ -39,7 +39,6 @@ function borders(id, mElm, pElm) {
       (pElm.style.borderColor = null), (mElm.style.borderColor = null);
       break;
     case "1":
-      // console.log("case - 1");
       (mElm.style.borderColor = null), (pElm.style.borderColor = pActive);
       break;
     case "2":
@@ -190,6 +189,4 @@ export {
   toRem,
   sProps,
   addCssProps,
-  // stringToArray,
-  // creatCode,
 };

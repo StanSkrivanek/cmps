@@ -68,20 +68,6 @@ input[type="radio"] {
     transform: scale(0, 0);
   } 
 
-  /* .no-transforms .inside {
-    left: auto;
-    top: auto;
-    width: 0;
-    height: 0;
-  } */
-
-  /* input { */
-  /*  &:focus, &:active {
-        + .outside {
-          border-color: $almost-black;
-        }
-      }*/
-  /* } */
   input:checked + .outside {
     border-color: var(--col-active);
   }

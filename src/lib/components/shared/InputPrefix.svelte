@@ -19,7 +19,7 @@
   let x = null;
 
   $: allPfxArr = [];
-// $: console.log(allPfxArr);
+
 
   function getInputId() {
     $selectedInputId = id;
@@ -28,10 +28,10 @@
   function createAndUpdateObj(e) {
 
     pfxValue = e.target.value;
-    // if not -1 it will push first input into allPfxArr TWICE. OPTION: change id to start from 0
+
     idx = id - 1;
     cssProps = addCssProps(idx);
-    // create object
+
     prefixObjArr[idx] = {
       id,
       sType,
@@ -50,11 +50,8 @@
   function checkForPfxDuplicates(obj) {
     for (var objKey in obj) {
       let objPfxValue = obj[objKey]["pfxValue"];
-      // console.log("checkForPfxDup: objPfxValue", objPfxValue);
 
-      // if input is empty - remove object it from allPfxArr
       if (objPfxValue == "") {
-        // console.log("checkForPfxDup: objPfxValue", objPfxValue);
         delete $prefixObjArr[objKey];
       }
 
@@ -69,7 +66,7 @@
         showAlert = false;
       }
     }
-    // console.log(allPfxArr);
+
   }
 
   $: if (populate === true) {

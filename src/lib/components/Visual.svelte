@@ -2,15 +2,12 @@
   import { borders } from "$lib/helpers";
   import { selectedInputId } from "$lib/stores/store.js";
   import { isVisualHidden } from "$lib/stores/store.js";
+
   let mElm = null;
   let pElm = null;
-  // let isHidden = true;
-  // $: console.log(isHidden);
-  // console.log("isHidden", $isHidden);
 
-  // $: handleUpdate();
-  // console.log(handleUpdate());
   $: borders($selectedInputId, mElm, pElm);
+
 </script>
 
   <div class="container {$isVisualHidden ? "hidden" : ""}">
@@ -56,7 +53,6 @@
     --visual-width: 500px;
   }
   .container {
-    /* padding: 0 16px; */
     flex: 1 1 50%;
     min-height: 100%;
     min-width: 300px;

@@ -64,7 +64,6 @@
   .form-group .form-field {
     white-space: nowrap;
     display: block;
-    /* text-transform: uppercase; */
   }
   .form-group > span:not(:first-child):not(:last-child),
   .form-group .form-field:not(:first-child):not(:last-child) {
@@ -106,8 +105,6 @@
     transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
   }
   .form-group:focus-within > span {
-    /* color: var(--col-white); */
-    /* background: var(--col-bg-gray); */
     border-color: var(--col-active);
   }
 

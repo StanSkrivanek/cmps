@@ -21,8 +21,7 @@
   $: data = $prefixObjArr;
   $: sizes = $sizesStore;
   $: pfxCss = getObjKeysValue(data);
-  $: console.log(isReady);
-  $: console.log(data);
+
 
   function toggleVisibility() {
     $isVisualHidden = !$isVisualHidden;
@@ -43,7 +42,6 @@
         obj[objKey]["pfxValue"] === "" ||
         obj[objKey]["pfxValue"] === undefined
       ) {
-        // console.log("Prefix can't be empty, add at least one prefix value");
       } else {
         fullObj[objKey] = {
           pfx: obj[objKey]["pfxValue"],
@@ -150,7 +148,6 @@
     } catch {
       console.error("Clipboard API not available");
     }
-    // console.log(Object.keys(data).length);
   };
 </script>
 
@@ -374,7 +371,6 @@
     gap: 16px;
   }
   .btns__c {
-    /* position: relative; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

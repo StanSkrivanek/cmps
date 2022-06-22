@@ -3,9 +3,8 @@
   import { quintOut } from "svelte/easing";
   export let toastMessage = "Message";
   export let toastType = "success";
-  // export let toastIsHidden = true;
 </script>
-<!-- transition:fly={{ delay:250, duration: 1000, easing: quintOut, y:200, opacity:1 }} -->
+
 <div transition:fly={{ delay:200, duration: 800, easing: quintOut, y: -60}}
   class="toast__c {toastType} "
 >

@@ -32,7 +32,6 @@
     ) {
       showAlert = false;
     } else {
-      // console.log("Not a Number", evt.key);
       showAlert = true;
     }
   }
@@ -69,7 +68,6 @@
   .container {
     gap: 16px;
   }
-
   .input-component {
     position: relative;
   }
@@ -77,7 +75,6 @@
     font-family: "Open Sans", sans-serif;
     display: flex;
   }
-
   .form-field {
     display: block;
     width: 100%;
@@ -106,11 +103,6 @@
     outline: none;
     border-color: var(--col-active);
   }
-  /* .form-field:focus {
-  outline: none;
-  border-color: var(--input-border-focus);
-} */
-
   .form-group {
     position: relative;
     display: flex;

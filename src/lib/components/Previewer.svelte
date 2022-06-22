@@ -3,6 +3,7 @@
 
   let prefix = "py";
   let pxVal = 24;
+
   $: remVal = Number((pxVal / $previewerValues.rootsize).toFixed(3));
   $: convertUnits = $previewerValues.unit === "rem" ? remVal : pxVal;
 
@@ -18,13 +19,7 @@
   </div>
 </div>
 
-<!-- <pre>
-{JSON.stringify($previewerValues, null, 2)}
-</pre> -->
 <style>
-  * {
-    box-sizing: border-box;
-  }
   .container {
     flex: 1 1 40%;
     position: relative;
@@ -65,7 +60,6 @@
     padding: 24px;
     height: 100%;
     overflow: hidden;
-    /* color: var(--col-text-main); */
     border: 1px solid var(--col-bg-sec);
     border-radius: 4px;
   }
