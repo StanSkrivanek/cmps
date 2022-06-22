@@ -81,14 +81,14 @@
 
         let createNegativeMargings = () => {
           if (neg && neg === "true") {
-            return `.${`-`}${pfx}${separator}${size} {\n${props
+            return `.${`n`}${pfx}${separator}${size} {\n${props
               .map((prop) => {
                 if (unit == "rem") {
-                  return `\t${prop}: -${Number(
+                  return `\t${prop}: n${Number(
                     (size / root).toFixed(3)
                   )}${unit};`;
                 } else {
-                  return `\t${prop}: -${size}${unit};`;
+                  return `\t${prop}: n${size}${unit};`;
                 }
               })
               .join("\r\n")}\n}`;
