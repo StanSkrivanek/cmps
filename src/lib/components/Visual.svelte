@@ -52,9 +52,8 @@
 <style>
   :root {
     --border-size: 40px;
-    /* --border-active: rgb(103, 142, 254); */
-    --border-inactive: rgb(217, 228, 246);
-    --demo-width: 400px;
+    --border-inactive: var(--col-bg-sec);
+    --visual-width: 500px;
   }
   .container {
     /* padding: 0 16px; */
@@ -71,17 +70,14 @@
   .margin__w {
     position: relative;
     max-width: 100%;
-    height: calc(var(--demo-width) / 2);
+    height: calc(var(--visual-width) / 2);
     background-color: #fff;
     border: var(--border-size) solid var(--border-inactive);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(52, 52, 52);
-
-    /* margin-bottom: 24px; */
+    font-family: monospace, sans-serif;
+    color: var(--col-text-main);
   }
   .separator {
     height: 100%;
-    /* border: 1px dotted black; */
   }
   .padding__w {
     position: absolute;
@@ -90,10 +86,7 @@
     right: 0;
     bottom: 0;
     border: var(--border-size) solid var(--border-inactive);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* border-top-color: var(--border-inactive); */
-    /* border-bottom-color:  var(--border-inactive); */
-    /* border-bottom-style: doted; */
+    font-family: monospace, sans-serif;
   }
   .m-wrap,
   .p-wrap {

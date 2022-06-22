@@ -33,8 +33,8 @@
     /* border: 1px solid red; */
   }
   pre {
-    font-size: 1.4rem;
-    font-family: monospace;
+    font-size: 1.2rem;
+    font-family: monospace, sans-serif;
 
     white-space: pre-wrap;
     word-wrap: break-word;
@@ -45,7 +45,7 @@
     height: 100%;
     padding: 16px;
     border-radius: 6px;
-    background-color: #fff;
+    background-color: var(--col-white);
     font-family: Menlo, sans-serif;
     font-size: 1.2rem;
     background-color: var(--col-bg-gray);
