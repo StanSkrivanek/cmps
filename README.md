@@ -5,8 +5,11 @@ This applicalin allow user to create custom spacing system for padding and margi
 ## SYSTEM
 
 This option offer to choose from
+
 `Custom` - add your own sizes in `SIZE` input
+
 `8pt system` - populate basic sizes in steps from `0` to `160`
+
 `10pt system` - populate basic sizes in steps from `0` to `100`
 
 Both predefined options are editable to be able add and/or remove sizes
@@ -18,6 +21,7 @@ You can set custom separator between prefix _(class name)_ and number that ident
 ## UNITS
 
 Choose from two units `px` ot `rem`.
+
 
 `px` - when code will be generated sizes from `SIZE` input will be used as values in `px`
 
