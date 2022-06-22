@@ -52,13 +52,5 @@
     padding: 16px;
     flex-direction: column;
     justify-items: stretch;
-    /* border: 1px solid red; */
   }
-  /* .preview__w {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    padding: 16px;
-    border: 1px solid red;
-  } */
 </style>

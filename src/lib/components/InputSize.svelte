@@ -2,12 +2,10 @@
   import { ps8, ps10, ps0, psRem } from "$lib/helpers";
   import { pointSys } from "$lib/stores/store";
   import { sizesStore } from "$lib/stores/store";
-  // $: console.log("IN SCIRIPT - $pointSys", $pointSys.pointSystem);
 
   let showAlert = false;
   let charCodeNum = null;
 
-  // let sizesStr = "";
 
   $: if ($pointSys.pointSystem === "1") {
     $sizesStore = ps8;
@@ -33,25 +31,12 @@
       charCodeNum < 106
     ) {
       showAlert = false;
-      // return false;
     } else {
       // console.log("Not a Number", evt.key);
       showAlert = true;
     }
-    // console.log(evt.charCode);
   }
 
-  // function createArray(sizes) {
-  //   let sizesArr = [];
-  //   sizes.forEach((item) => {
-  //     sizesArr.push(item);
-  //   }),
-  //     console.log("sizesArr", sizesArr);
-  //   return sizesArr;
-  // }
-
-  // $: console.log($sizesStore);
-  // $: console.log("sizesStore-INPUT SIZE", sizesStr, $sizesStore);
 </script>
 
 <div class="container">
@@ -71,11 +56,9 @@
           bind:value={$sizesStore}
           on:keyup={isNumber}
         />
-        <!--  $sizesStore = $sizesStore.replace(/,/g, '') -->
+
       </div>
     </div>
-
-    <!-- wrap this in Svelte IF condition  -->
     <div class="input-heading danger">
       <p>{showAlert ? `[ ${charCodeNum} ] is not a number` : ""}</p>
     </div>

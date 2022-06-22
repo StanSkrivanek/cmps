@@ -330,9 +330,9 @@
   </div>
 </form>
 
-<!-- <pre>
+<pre>
 {JSON.stringify($prefixObjArr, null, 2)}
-</pre> -->
+</pre>
 
 <style>
 

@@ -19,6 +19,7 @@
   let x = null;
 
   $: allPfxArr = [];
+$: console.log(allPfxArr);
 
   function getInputId() {
     $selectedInputId = id;
@@ -206,8 +207,6 @@
     transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
   }
   .form-group:focus-within > span {
-    /* color: var(--col-white); */
-    /* background: var(--col-bg-gray); */
     border-color: var(--col-active);
   }
 
