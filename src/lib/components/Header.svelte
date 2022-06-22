@@ -1,5 +1,5 @@
 <header class="container">
-  <h1 class="light-heading">Custom Marging And Padding System Generator</h1>
+  <h1 class="light-heading">Custom CSS Spacing System Generator</h1>
 </header>
 
 <style>

@@ -1,38 +1,57 @@
-# create-svelte
+# Custom CSS Spacing System Generator
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This applicalin allow user to create custom spacing system for padding and margin. Build with Svelte.
 
-## Creating a project
+## SYSTEM
 
-If you're seeing this, you've probably already done this step. Congrats!
+This option offer to choose from
+`Custom` - add your own sizes in `SIZE` input
+`8pt system` - populate basic sizes in steps from `0` to `160`
+`10pt system` - populate basic sizes in steps from `0` to `100`
 
-```bash
-# create a new project in the current directory
-npm init svelte
+Both predefined options are editable to be able add and/or remove sizes
 
-# create a new project in my-app
-npm init svelte my-app
+## SEAPARATOR
+
+You can set custom separator between prefix _(class name)_ and number that identify size. predefined value is `-`
+
+## UNITS
+
+Choose from two units `px` ot `rem`.
+
+`px` - when code will be generated sizes from `SIZE` input will be used as values in `px`
+
+`rem` - when code will be generated sizes from `SIZE` input will be used as initial values to be recalcluated to `rem` units based on `root size`.
+
+`root size` - set custom font `root size` to calculate `px` to `rem`s. Predefined value is `16`
+
+## CODE PREVIEW
+
+Visual feedback for **seaparator** and **units**.
+
+---
+
+## PREFIX
+
+Input fields for to fill custom prefixes.
+
+`prepoulate` - prepoulate basic prefixes inspred by Tailwind. You can prepoulate for insipiratio and/or **edit** these values.
+
+`Clear All` - will clear all prefixes fields
+
+`show visual` - Visual feeback for prefixes
+
+---
+
+## GENERATE CODE
+
+When you are done trigering button will generate all data into clipborad.
+
+**NOTE:** Generated code will include **negative** margins for `top`, `left`, `bottom` and `right`. these will have `-` before prefix as in Tailwind.
+
+```css
+.-py-24 {
+  padding-top: 1.5rem
+  padding-bottom:1.5rem;
+ }
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
