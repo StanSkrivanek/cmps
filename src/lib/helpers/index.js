@@ -31,91 +31,89 @@ function toRem(pxValue, rootsize) {
 
 // VISUAL
 function borders(id, mElm, pElm) {
-  // if(isHidden) {
-  //   return
-  // }else{
-  // let active = "#ff5a5f";
-  let active = "#94acf3";
+  let pActive = "#9ffdbe";
+  let mActive = "#fcaa7d";
+
   switch (id) {
     case "0":
       (pElm.style.borderColor = null), (mElm.style.borderColor = null);
       break;
     case "1":
       // console.log("case - 1");
-      (mElm.style.borderColor = null), (pElm.style.borderColor = active);
+      (mElm.style.borderColor = null), (pElm.style.borderColor = pActive);
       break;
     case "2":
       (mElm.style.borderColor = null),
         (pElm.style.borderColor = null),
-        (pElm.style.borderLeftColor = active),
-        (pElm.style.borderRightColor = active);
+        (pElm.style.borderLeftColor = pActive),
+        (pElm.style.borderRightColor = pActive);
 
       break;
     case "3":
       (mElm.style.borderColor = null),
         (pElm.style.borderColor = null),
-        (pElm.style.borderTopColor = active),
-        (pElm.style.borderBottomColor = active);
+        (pElm.style.borderTopColor = pActive),
+        (pElm.style.borderBottomColor = pActive);
 
       break;
     case "4":
       (mElm.style.borderColor = null),
         (pElm.style.borderColor = null),
-        (pElm.style.borderTopColor = active);
+        (pElm.style.borderTopColor = pActive);
       break;
     case "5":
       (mElm.style.borderColor = null),
         (pElm.style.borderColor = null),
-        (pElm.style.borderRightColor = active);
+        (pElm.style.borderRightColor = pActive);
       break;
     case "6":
       (mElm.style.borderColor = null),
         (pElm.style.borderColor = null),
-        (pElm.style.borderBottomColor = active);
+        (pElm.style.borderBottomColor = pActive);
       break;
     case "7":
       (mElm.style.borderColor = null),
         (pElm.style.borderColor = null),
-        (pElm.style.borderLeftColor = active);
+        (pElm.style.borderLeftColor = pActive);
       break;
     case "8":
       (pElm.style.borderColor = null),
         (mElm.style.borderColor = null),
-        (mElm.style.borderColor = active);
+        (mElm.style.borderColor = mActive);
       break;
     case "9":
       (pElm.style.borderColor = null),
         (mElm.style.borderColor = null),
-        (mElm.style.borderLeftColor = active),
-        (mElm.style.borderRightColor = active);
+        (mElm.style.borderLeftColor = mActive),
+        (mElm.style.borderRightColor = mActive);
 
       break;
     case "10":
       (pElm.style.borderColor = null),
         (mElm.style.borderColor = null),
-        (mElm.style.borderTopColor = active),
-        (mElm.style.borderBottomColor = active);
+        (mElm.style.borderTopColor = mActive),
+        (mElm.style.borderBottomColor = mActive);
 
       break;
     case "11":
       (pElm.style.borderColor = null),
         (mElm.style.borderColor = null),
-        (mElm.style.borderTopColor = active);
+        (mElm.style.borderTopColor = mActive);
       break;
     case "12":
       (pElm.style.borderColor = null),
         (mElm.style.borderColor = null),
-        (mElm.style.borderRightColor = active);
+        (mElm.style.borderRightColor = mActive);
       break;
     case "13":
       (pElm.style.borderColor = null),
         (mElm.style.borderColor = null),
-        (mElm.style.borderBottomColor = active);
+        (mElm.style.borderBottomColor = mActive);
       break;
     case "14":
       (pElm.style.borderColor = null),
         (mElm.style.borderColor = null),
-        (mElm.style.borderLeftColor = active);
+        (mElm.style.borderLeftColor = mActive);
       break;
   }
   // }

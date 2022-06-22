@@ -18,4 +18,5 @@
 }
 body{
   color: var(--col-text-main);
+  border-color: #9ffdbe;
 }
