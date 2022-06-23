@@ -1,6 +1,6 @@
 # Custom CSS Spacing System Generator
 
-This applicalin allow user to create custom spacing system for padding and margin. Build with Svelte.
+This app allow user to create custom spacing system for padding and margin. App is build with Svelte.
 
 ## SYSTEM
 
