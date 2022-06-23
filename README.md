@@ -4,7 +4,7 @@ This app allow user to create custom spacing system for padding and margin. App 
 
 ## SYSTEM
 
-This option offer to choose from
+This option offer to choose from:
 
 `Custom` - add your own sizes in `SIZE` input
 
@@ -16,30 +16,30 @@ Both predefined options are editable to be able add and/or remove sizes
 
 ## SEAPARATOR
 
-You can set custom separator between prefix _(class name)_ and number that identify size. predefined value is `-`
+You can set custom separator between prefix and number that identify size, predefined value is `-`
 
 ## UNITS
 
-Choose from two units `px` ot `rem`.
+Choose from two units `px` or `rem`.
 
 
-`px` - when code will be generated sizes from `SIZE` input will be used as values in `px`
+`px` - when code will be generated, the sizes from `SIZE` input will be used as values in `px`
 
-`rem` - when code will be generated sizes from `SIZE` input will be used as initial values to be recalcluated to `rem` units based on `root size`.
+`rem` - when code will be generated, the sizes from `SIZE` input will be used as initial values to be recalcluated into `rem` units based on `root size`.
 
-`root size` - set custom font `root size` to calculate `px` to `rem`s. Predefined value is `16`
+`root size` - set custom `root size` to calculate `rem`. Predefined value is `16`
 
 ## CODE PREVIEW
 
-Visual feedback for **seaparator** and **units**.
+Visual feedback for **separator** and **units**.
 
 ---
 
 ## PREFIX
 
-Input fields for to fill custom prefixes.
+Input fields for custom prefixes.
 
-`prepoulate` - prepoulate basic prefixes inspred by Tailwind. You can prepoulate for insipiratio and/or **edit** these values.
+`prepopulate` - prepopulate basic prefixes inspired by Tailwind. You can **edit** these values.
 
 `Clear All` - will clear all prefixes fields
 
@@ -49,9 +49,9 @@ Input fields for to fill custom prefixes.
 
 ## GENERATE CODE
 
-When you are done trigering button will generate all data into clipborad.
+Button **generate to clipboard** will generate all data into clipborad.
 
-**NOTE:** Generated code will include **negative** margins for `top`, `left`, `bottom` and `right`. these will have letter `n` before prefix.
+**NOTE:** Generated code will include **negative** margins for `top`, `left`, `bottom` and `right`. These will have letter `n` before prefix.
 
 ```css
 .nmt-24 {
